@@ -70,7 +70,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
-      title: Text('Select ${widget.label}'),
+      title: Text('Selecione ${widget.label}'),
       content: SizedBox(
         width: widget.width,
         height: widget.height,
@@ -78,7 +78,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
           children: <Widget>[
             TextField(
               decoration: InputDecoration(
-                hintText: 'Search ${widget.label}',
+                hintText: 'Buscar ${widget.label}',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
