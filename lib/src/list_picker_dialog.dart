@@ -78,6 +78,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
           children: <Widget>[
             TextField(
               decoration: InputDecoration(
+                suffixIcon: Icon(Icons.search),
                 hintText: 'Buscar ${widget.label}',
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
                 border: OutlineInputBorder(
