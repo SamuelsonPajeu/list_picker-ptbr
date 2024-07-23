@@ -94,18 +94,20 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
             const Divider(),
             SizedBox(
               height: widget._scrollableHeight,
-              child: ListView(
-                shrinkWrap: true,
-                padding: EdgeInsets.zero,
-                children: searchList.map((String item) {
-                  return ListTile(
-                    title: Text(item),
-                    contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                    ),
-                    onTap: () => Navigator.of(context).pop(item),
-                  );
-                }).toList(),
+              child: Scrollbar(
+                child: ListView(
+                  shrinkWrap: true,
+                  padding: EdgeInsets.zero,
+                  children: searchList.map((String item) {
+                    return ListTile(
+                      title: Text(item),
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                      ),
+                      onTap: () => Navigator.of(context).pop(item),
+                    );
+                  }).toList(),
+                ),
               ),
             ),
           ],
