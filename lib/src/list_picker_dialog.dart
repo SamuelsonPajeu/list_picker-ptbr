@@ -95,6 +95,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
             SizedBox(
               height: widget._scrollableHeight,
               child: Scrollbar(
+                thumbVisibility: true,
                 child: ListView(
                   shrinkWrap: true,
                   padding: EdgeInsets.zero,
