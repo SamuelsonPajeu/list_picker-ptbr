@@ -99,6 +99,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
                 controller: scrollController,
                 thumbVisibility: true,
                 child: ListView(
+                  controller: scrollController,
                   shrinkWrap: true,
                   padding: EdgeInsets.zero,
                   children: searchList.map((String item) {
