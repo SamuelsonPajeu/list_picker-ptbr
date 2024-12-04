@@ -51,6 +51,7 @@ class ListPickerDialog extends StatefulWidget {
 
 class _ListPickerDialogState extends State<ListPickerDialog> {
   late List<String> searchList = widget.items;
+  final scrollController = ScrollController();
 
   void _onSearchChanged(String value) {
     final searchValue = value.toLowerCase().trim();
@@ -95,6 +96,7 @@ class _ListPickerDialogState extends State<ListPickerDialog> {
             SizedBox(
               height: widget._scrollableHeight,
               child: Scrollbar(
+                controller: scrollController,
                 thumbVisibility: true,
                 child: ListView(
                   shrinkWrap: true,
